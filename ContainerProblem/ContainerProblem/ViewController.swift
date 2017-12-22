@@ -26,7 +26,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+   
+    @IBAction func resetSelected(_ sender: Any) {
+        solutionSteps.text = "";
+        
+    }
+    
     @IBAction func submitSelected(_ sender: Any) {
         print("Submit clicked")
         //Read values from text fields
